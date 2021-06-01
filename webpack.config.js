@@ -90,6 +90,16 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
+            filename: "product2.html",
+            template: "./src/product2.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "product3.html",
+            template: "./src/product3.html",
+        }),
+
+        new HtmlWebpackPlugin({
             filename: "checkout.html",
             template: "./src/checkout.html",
         }),
