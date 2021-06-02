@@ -1,47 +1,130 @@
-@import './variables';
-@import './custom-table';
-@import './-mixins.scss';
+@import "./variables";
+@import "./custom-table";
+@import "./-mixins.scss";
 
-
-
-
-
-.custom-form-control, .custom-btn {
-    color: #868686;
-    border: 1px solid #ebebeb;
-    box-shadow: none;
-    font-size: 14px;
-    padding: 6px 16px 7px 16px;
-    transition: all 0.3s ease;
+.custom-form-control,
+.custom-btn {
+  color: #868686;
+  border: 1px solid #ebebeb;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 6px 16px 7px 16px;
+  transition: all 0.3s ease;
 }
 
 .custom-btn:hover {
-    background-color: #d4d4d4;
-    border: 1px solid #8c8c8c;
-    color: $brand-primary;
+  background-color: #d4d4d4;
+  border: 1px solid #8c8c8c;
+  color: $brand-primary;
 }
 
 .custom-navbar .container .custom-form-control:focus {
-    border-color: $brand-primary;
-    box-shadow: 0 0 2.5px 0 $brand-primary;
+  border-color: $brand-primary;
+  box-shadow: 0 0 2.5px 0 $brand-primary;
 }
 
 .custom-btn-primary2 {
-    color: #000000;
-    background-color:  #555555;
-    border-color:  #ffffff;
+  color: #000000;
+  background-color: #555555;
+  border-color: #ffffff;
 
-    &:hover,
-    &:active,
-    &:focus,
-    &:active:focus,
-    &:active:hover {
-        background-color: $brand-primary;
-        border-color: $brand-primary;
-        color: #ffffff;
-    }
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus,
+  &:active:hover {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    color: #ffffff;
+  }
 }
 
 .custom-btn-danger {
-    @include button-style($brand-primary, $brand-two);
+  @include button-style($brand-primary, $brand-two);
+}
+
+
+
+#p1 #form-product-selection h2,
+#p1 .more-discription h3,
+#p1 .heading-inline,
+#p1 .custom-heading {
+    color: $product-one;
+}
+#brand-logos.p1 {
+    background-color: $product-one;
+}
+#p1 #footer-copyright-social #copyright {
+    color: $product-one;
+}
+#p1 #contact-info h3 {
+    color: $product-one;
+}
+#p1 .custom-navbar {
+    background-color: $product-one-lite;
+}
+#p1 .custom-breadcrumb .active {
+    color: $product-one;
+}
+#p1 #footer-copyright-social a {
+    color: $product-one;
+}
+#p1 #footer-copyright-social a:hover {
+    color: $brand-primary;
+}
+
+#p2 #form-product-selection h2,
+#p2 .more-discription h3,
+#p2 .heading-inline,
+#p2 .custom-heading {
+    color: $product-two;
+}
+#brand-logos.p2 {
+    background-color: $product-two;
+}
+#p2 #footer-copyright-social #copyright {
+    color: $product-two;
+}
+#p2 #contact-info h3 {
+    color: $product-two;
+}
+#p2 .custom-navbar {
+    background-color: $product-two-lite;
+}
+#p2 .custom-breadcrumb .active {
+    color: $product-two;
+}
+#p2 #footer-copyright-social a {
+    color: $product-two;
+}
+#p2 #footer-copyright-social a:hover {
+    color: $brand-primary;
+}
+
+#p3 #form-product-selection h2,
+#p3 .more-discription h3,
+#p3 .heading-inline,
+#p3 .custom-heading {
+    color: $product-tree;
+}
+#brand-logos.p3 {
+    background-color: $product-tree;
+}
+#p3 #footer-copyright-social #copyright {
+    color: $product-tree;
+}
+#p3 #contact-info h3 {
+    color: $product-tree;
+}
+#p3 .custom-navbar {
+    background-color: $product-three-lite;
+}
+#p3 .custom-breadcrumb .active {
+    color: $product-tree;
+}
+#p3 #footer-copyright-social a {
+    color: $product-tree;
+}
+#p3 #footer-copyright-social a:hover {
+    color: $brand-primary;
 }
